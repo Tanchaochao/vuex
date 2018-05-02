@@ -63,7 +63,7 @@ export default {
     //   changeCount: "ADD_USER_COUNT" // 将 `this.changeCount()` 映射为 `this.$store.commit('ADD_USER_COUNT')`
     // }),
     ...mapActions({
-      hangeCount: 'change_count' // 将 `this.changeCount()` 映射为 `this.$store.dispatch('change_count')` change_count其实就是 'ADD_USER_COUNT' 这个mutation
+      changeCount: 'change_count' // 将 `this.changeCount()` 映射为 `this.$store.dispatch('change_count')` change_count其实就是 'ADD_USER_COUNT' 这个mutation
     }),
     // changeCount(){
     //     this.$store.dispatch('change_count',100)
