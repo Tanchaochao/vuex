@@ -16,6 +16,7 @@
     <!-- 总人数 vuex Getter --> 
     <div>总人数：{{totalCount}}</div>
     <button @click="changeCount(20)">修改人数</button>
+    <div><input type="search" name="" id=""></div>
   </div>
 </template>
 
@@ -101,6 +102,41 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='less'>
+
+
+input[type=search]{
+    border-radius: 5px;
+    border: 1px solid #ebebeb;//必须对默认的border:2px inset覆盖，要不然下面的样式也是白搭
+    width: 98%;
+    height: 30px;
+    outline: none;
+}
+input[type=search]::-webkit-input-placeholder{
+    color: blue;
+}
+input[type=search]::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+input[type=search]::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #EBEBEB;
+}
+input[type=search]::-webkit-search-cancel-button:after{
+    position: absolute;
+    content: 'x';
+    left: 25%;
+    top: -12%;
+    font-size: 20px;
+    color: #fff;
+}
+input[type=search]::-webkit-input-placeholder{
+    color: blue;
+}
 .van-icon {
   position: relative;
   display: inline-block;
